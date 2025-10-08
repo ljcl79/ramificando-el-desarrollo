@@ -1,0 +1,143 @@
+/* --- Reset y Estilos Globales --- */
+:root {
+    --primary-color: #2c3e50;
+    /* Azul oscuro */
+    --secondary-color: #3498db;
+    /* Azul brillante */
+    --accent-color: #2ecc71;
+    /* Verde */
+    --background-color: #ecf0f1;
+    /* Gris claro */
+    --text-color: #34495e;
+    /* Gris oscuro */
+    --card-bg: #ffffff;
+    --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    font-family: var(--font-family);
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* --- Encabezado --- */
+.header {
+    background: var(--primary-color);
+    color: var(--card-bg);
+    padding: 40px 20px;
+    text-align: center;
+    border-bottom: 5px solid var(--secondary-color);
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 2.8em;
+    font-weight: 700;
+}
+
+.header p {
+    font-size: 1.2em;
+    opacity: 0.9;
+    max-width: 600px;
+    margin: 10px auto 0;
+}
+
+/* --- Iconos SVG --- */
+.icon {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 15px;
+    fill: var(--secondary-color);
+}
+
+/* --- Sección Principal --- */
+.main-content {
+    padding: 40px 0;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.2em;
+    color: var(--primary-color);
+    margin-bottom: 40px;
+}
+
+/* --- Grid de Tarjetas --- */
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.card {
+    background-color: var(--card-bg);
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.card h3 {
+    font-size: 1.5em;
+    color: var(--primary-color);
+    margin-top: 0;
+}
+
+/* --- Bloques de Código --- */
+code {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #2d2d2d;
+    color: #b0f2c2;
+    /* Verde menta */
+    padding: 4px 8px;
+    border-radius: 5px;
+    font-size: 0.95em;
+}
+
+.code-block {
+    background-color: #2d2d2d;
+    color: var(--card-bg);
+    padding: 15px;
+    border-radius: 8px;
+    text-align: left;
+    margin-top: 15px;
+    font-family: 'Courier New', Courier, monospace;
+    white-space: pre-wrap;
+    /* Para que el texto se ajuste */
+    border-left: 4px solid var(--accent-color);
+}
+
+.code-block .comment {
+    color: #7f8c8d;
+    /* Color para comentarios */
+}
+
+.code-block .command {
+    color: #e67e22;
+    /* Naranja para comandos */
+}
+
+
+/* --- Footer --- */
+.footer {
+    background-color: var(--primary-color);
+    color: var(--card-bg);
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
